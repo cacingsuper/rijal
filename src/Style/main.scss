@@ -1,0 +1,46 @@
+$bg-dark: #20232a;
+$primary: #41e0fd;
+$white: white;
+
+* {
+  box-sizing: border-box;
+}
+body,
+html {
+  background-color: $bg-dark;
+  overflow-x: hidden;
+}
+#root {
+  background-color: $bg-dark;
+}
+
+#header {
+  color: $primary;
+  background-color: $bg-dark;
+}
+
+#menu {
+  background-color: $bg-dark;
+}
+#menu-active {
+  box-sizing: border-box;
+  border-bottom: 4px solid $primary;
+  transition: ease-in-out 1s;
+}
+
+.nav-link {
+  margin: 1rem;
+  border-bottom: 5px solid $bg-dark;
+}
+.nav-link:focus {
+  color: $primary !important;
+  border-bottom: 5px solid $primary;
+}
+
+.nav-link:active {
+  color: $primary !important;
+  border-bottom: 3px solid $primary;
+}
+.nav-link:hover {
+  color: $primary !important;
+}
