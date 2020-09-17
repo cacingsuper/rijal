@@ -6,8 +6,8 @@ function AlertDis() {
 
   if (show) {
     return (
-      <div className="container">
-        <Alert variant="danger" onClose={() => setShow(false)} dismissible>
+      <div className="container p-1">
+        <Alert variant="primary" onClose={() => setShow(false)} dismissible>
           <Alert.Heading>Oh snap! You got an error!</Alert.Heading>
           <p>
             Change this and that and try again. Duis mollis, est non commodo
@@ -18,7 +18,7 @@ function AlertDis() {
       </div>
     );
   }
-  return <div></div>;
+  return false;
 }
 
 export default AlertDis;

@@ -1,0 +1,41 @@
+$primary: #41e0fd;
+.avatar-1 {
+  width: 10%;
+  margin: 2rem;
+}
+.avatar-2 {
+  width: 90%;
+}
+
+.avatar-channel {
+  width: 100%;
+}
+.playlist-card {
+  margin: 0.5rem;
+}
+
+@media (max-width: 376px) {
+  .avatar-1 {
+    width: 20%;
+    margin: 1rem;
+  }
+  .avatar-2 {
+    width: 80%;
+    font-size: 4vw;
+  }
+  .avatar-2 h1 {
+    font-size: 5vw;
+  }
+
+  .playlist-card {
+    margin: 0.5rem;
+    width: 100%;
+    height: 100%;
+  }
+
+  .playlist-card .card {
+    background-color: transparent;
+    border: transparent;
+    color: #ffffff;
+  }
+}

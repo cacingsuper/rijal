@@ -1,0 +1,117 @@
+[
+  {
+    "type": "header",
+    "version": "5.0.2",
+    "comment": "Export to JSON plugin for PHPMyAdmin"
+  },
+  { "type": "database", "name": "pelajaran" },
+  {
+    "type": "table",
+    "name": "t_author",
+    "database": "pelajaran",
+    "data": [
+      {
+        "id": "1",
+        "channel_name": "Web Progamming Unpas",
+        "slug_channel_name": "web-progamming-unpas",
+        "realname": "Sandhika Galih",
+        "channel_url": "https://www.youtube.com/channel/UCkXmLjEr95LVtGuIm3l2dPg",
+        "channel_img": "https://yt3.ggpht.com/a/AATXAJzuPUS-e48gt8tBumgmDGljXYQsWhhiizSFP17fBg=s900-c-k-c0xffffffff-no-rj-mo"
+      },
+      {
+        "id": "2",
+        "channel_name": "Santri Koding",
+        "slug_channel_name": "santri-koding",
+        "realname": "Fika Ridaul Maulayya",
+        "channel_url": "https://www.youtube.com/channel/UCi8hhurTTsRxPc8Ls-Dum_g",
+        "channel_img": "https://yt3.ggpht.com/a/AATXAJzUbTCmqN0r-pHRJ4m07wIP83W09XCxyBuh0qcO=s100-c-k-c0xffffffff-no-rj-mo"
+      },
+      {
+        "id": "3",
+        "channel_name": "Malas Ngoding",
+        "slug_channel_name": "malas-ngoding",
+        "realname": "Diki Alfarabi Hadi",
+        "channel_url": "https://www.youtube.com/channel/UCZqwduGEVfBGClXH3rLJjGA",
+        "channel_img": "https://yt3.ggpht.com/a/AATXAJzy9hCgcDsxQ8X0PoLrkXA4xgegogkwTJednpY4rA=s100-c-k-c0xffffffff-no-rj-mo"
+      },
+      {
+        "id": "4",
+        "channel_name": "BuildWith Angga",
+        "slug_channel_name": "buildwith-angga",
+        "realname": "Angga Risky",
+        "channel_url": "https://www.youtube.com/channel/UCrCqB6_uGWECG-Fns1ArhFA",
+        "channel_img": "https://yt3.ggpht.com/a/AATXAJzXSyh7plSyuV493qWcYx_0pEeaVe4k3A0WYjovsA=s176-c-k-c0x00ffffff-no-rj-mo"
+      }
+    ]
+  },
+  {
+    "type": "table",
+    "name": "t_playlist",
+    "database": "pelajaran",
+    "data": [
+      {
+        "playlist_id": "1",
+        "title_playlist": "Dasar JavaScript",
+        "slug": "dasar-javascript"
+      },
+      {
+        "playlist_id": "2",
+        "title_playlist": "Dasar PHP",
+        "slug": "dasar-php"
+      },
+      {
+        "playlist_id": "3",
+        "title_playlist": "Belajar Figma",
+        "slug": "belajar-figma"
+      },
+      {
+        "playlist_id": "4",
+        "title_playlist": "Belajar Laravel",
+        "slug": "belajar-laravel"
+      }
+    ]
+  },
+  {
+    "type": "table",
+    "name": "t_video",
+    "database": "pelajaran",
+    "data": [
+      {
+        "id_video": "1",
+        "title_video": "Belajar Dasar JavaScript Dengan Web Progamming Unpas 1",
+        "thumbnail_video": "https://i.ytimg.com/an_webp/d10LpGIuoMc/mqdefault_6s.webp",
+        "url_video": "https://www.youtube.com/watch?v=aT60R1cySLM&list=PLFIM0718LjIWB3YRoQbQh82ZewAGtE2-3&index=1&ab_channel=WebProgrammingUNPAS",
+        "slug_video": "belajar-dasar-javascript-dengan-web-progamming-unpas-1",
+        "author_id": "1",
+        "playlist_id": "1"
+      },
+      {
+        "id_video": "2",
+        "title_video": "Belajar Dasar PHP",
+        "thumbnail_video": "https://bahasaweb.com/wp-content/uploads/2016/10/tutorial-dasar-php.jpg",
+        "url_video": "https://www.youtube.com/watch?v=q3NVC5JxgVI&list=PLFIM0718LjIUqXfmEIBE3-uzERZPh3vp6&index=2&ab_channel=WebProgrammingUNPAS",
+        "slug_video": "belajar-dasar-php",
+        "author_id": "2",
+        "playlist_id": "2"
+      },
+      {
+        "id_video": "3",
+        "title_video": "Belajar Figma",
+        "thumbnail_video": "https://i.ytimg.com/an_webp/299j6ovxfms/mqdefault_6s.webp",
+        "url_video": "https://www.youtube.com/watch?v=wE-eGh8gWAk&ab_channel=BuildWithAngga",
+        "slug_video": "belajar-figma",
+        "author_id": "4",
+        "playlist_id": "3"
+      },
+      {
+        "id_video": "4",
+        "title_video": "DEMO SISTEM PENDUKUNG KEPUTUSAN PENENTUAN KARYAWAN TERBAIK METODE SAW DAN BORDA DENGAN LARAVEL",
+        "thumbnail_video": "https://i.ytimg.com/an_webp/2evjg0kdN08/mqdefault_6s.webp?du=3000&sqp=CPi0-_oF&rs=AOn4CLCFaVMmuX9HH8x9zZQugO8igbgsXQ",
+        "url_video": "https://www.youtube.com/watch?v=mDvXWum3S9I&ab_channel=MALASNGODING",
+        "slug_video": "DEMO-SISTEM-PENDUKUNG-KEPUTUSAN-PENENTUAN-KARYAWAN",
+        "author_id": "3",
+        "playlist_id": "4"
+      }
+    ]
+  }
+]

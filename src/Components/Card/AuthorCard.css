@@ -1,0 +1,17 @@
+.author-card .card {
+  text-align: center;
+  margin: 1rem;
+  width: 18rem;
+  background: transparent;
+  border: transparent;
+}
+.author-card img {
+  padding: 3rem;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.author-card button {
+  margin: 1rem;
+}

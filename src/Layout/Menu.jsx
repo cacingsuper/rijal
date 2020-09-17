@@ -8,6 +8,7 @@ import Home from "./Home";
 
 import Trending from "./Trending";
 import Author from "./Author";
+import AuthorDetail from "./AuthorDetail";
 //
 
 class Menu extends React.Component {
@@ -42,27 +43,22 @@ class Menu extends React.Component {
                       <Link className="nav-link" to="/author">
                         Author
                       </Link>
-                      <Link className="nav-link" to="/contributor">
-                        Contributor
-                      </Link>
                     </Nav>
                   </Navbar.Collapse>
                 </Navbar>
               </div>
             </div>
             <Switch>
-              <Route path="/">
+              <Route path="/" exact>
                 <Home />
               </Route>
               <Route path="/trending">
                 <Trending />
               </Route>
-              <Route path="/author">
+              <Route path="/author" exact>
                 <Author />
               </Route>
-              <Route path="/contributor">
-                <Author />
-              </Route>
+              <Route path="/author/:id" component={AuthorDetail}></Route>
             </Switch>
           </div>
         </Router>

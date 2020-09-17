@@ -1,6 +1,6 @@
 import React, { Component, Fragment } from "react";
 import { Image } from "react-bootstrap";
-import Framework from "./../Components/Card/Framework";
+import Framework from "../Components/Card/Framework";
 
 class Home extends React.Component {
   state = {
@@ -64,7 +64,6 @@ class Home extends React.Component {
   };
 
   render() {
-    console.log(this.state.frameworks);
     return (
       <Fragment>
         <div className="container">
@@ -73,12 +72,12 @@ class Home extends React.Component {
           </h1>
           <div className="row d-flex flex-wrap justify-content-center">
             {this.state.fronts.map((array) => (
-              <Framework data={array} />
+              <Framework data={array} key={array.id} />
             ))}
           </div>
           <div className="row d-flex flex-wrap justify-content-center">
             {this.state.backs.map((array) => (
-              <Framework data={array} />
+              <Framework data={array} key={array.id} />
             ))}
           </div>
 

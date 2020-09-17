@@ -7,7 +7,7 @@ function Framework(props) {
   return (
     <Fragment>
       <div className="framework">
-        <div class="card m-3">
+        <div className="card m-3">
           <span className="top"></span>
           <span className="bottom"></span>
           <span className="left"></span>

@@ -1,30 +1,31 @@
 import React, { Component, Fragment } from "react";
 import { Card } from "react-bootstrap";
 import { Button } from "react-bootstrap";
+import { Link } from "react-router-dom";
+
+import "./AuthorCard.css";
 
 function AuthorCard(props) {
   return (
     <Fragment>
-      <div class="card" style={cards}>
-        <img
-          class="card-img-top"
-          src="https://picsum.photos/200/300"
-          alt="Card image cap"
-        ></img>
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
-          </p>
-          <a href="#" class="btn btn-primary">
-            Go somewhere
-          </a>
-        </div>
+      <div className="author-card text-light">
+        <Card style={{ width: "18rem" }}>
+          <Card.Img variant="top" src={props.data.channel_img} />
+          <Card.Body>
+            <Card.Title>{props.data.channel_name}</Card.Title>
+            <Card.Text>
+              {props.data.realname}
+              <Card.Link href={props.data.chanel_url}></Card.Link>
+            </Card.Text>
+            <Button variant="primary">
+              <Link to={"/author/" + props.data.id}>Author</Link>
+            </Button>
+            <Button variant="danger">Youtube</Button>
+          </Card.Body>
+        </Card>
       </div>
     </Fragment>
   );
 }
 
-const cards = { width: "16rem", margin: "0.5rem" };
 export default AuthorCard;
