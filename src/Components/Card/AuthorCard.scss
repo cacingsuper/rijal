@@ -13,5 +13,19 @@
 }
 
 .author-card button {
-  margin: 1rem;
+  margin: 0.3rem;
+}
+
+.author-link {
+  color: white;
+}
+.author-link:hover {
+  color: white;
+  text-decoration: none;
+}
+
+.author-card {
+  button:active {
+    transform: scale(0.95);
+  }
 }

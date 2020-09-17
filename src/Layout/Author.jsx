@@ -15,7 +15,7 @@ class Author extends React.Component {
           <div className="row">
             <h1>Author</h1>
           </div>
-          <div className="row d-flex flex-wrap justify-content-center">
+          <div className="row d-flex flex-wrap">
             {this.state.authors.map((array) => (
               <AuthorCard data={array} key={array.id} />
             ))}

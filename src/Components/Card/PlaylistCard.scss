@@ -1,3 +1,5 @@
+$primary: #41e0fd;
+
 .playlist-card .card {
   background-color: transparent;
   border: transparent;
@@ -12,7 +14,7 @@
   transform: translateY(1.5);
   cursor: pointer;
 }
-.playlist-card .time {
+.playlist-card .thumb .time {
   position: absolute;
   z-index: 1;
   right: 0;
@@ -21,6 +23,7 @@
   padding: 0.2rem;
   border-radius: 0.3rem;
   color: white;
+  font-size: 12px;
 }
 .playlist-card .thumb {
   overflow: hidden;
@@ -54,5 +57,15 @@
   }
   .title {
     font-size: 14px;
+  }
+}
+
+.playlist-card {
+  a {
+    text-decoration: none;
+    color: white;
+  }
+  a:hover {
+    color: $primary;
   }
 }

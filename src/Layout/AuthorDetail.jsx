@@ -19,12 +19,20 @@ class AuthorDetail extends React.Component {
   }
 
   componentDidMount() {
-    let idParam = this.props.match.params.id;
-    let author = this.state.authors.find(({ id }) => id === `${idParam}`);
-    let videos = this.state.videos.filter(
-      ({ author_id }) => author_id === `${idParam}`
+    let slug = this.props.match.params.slug;
+    let id = this.state.authors.find(({ slug_channel_name }) => {
+      if (slug_channel_name === `${slug}`) {
+        return true;
+      }
+    });
+
+    let author = this.state.authors.find(
+      ({ slug_channel_name }) => slug_channel_name === `${slug}`
     );
-    console.log(author);
+    let videos = this.state.videos.filter(
+      ({ author_id }) => author_id === id.id
+    );
+
     this.setState({
       data: { ...this.state.data, author, videos },
     });
@@ -33,7 +41,6 @@ class AuthorDetail extends React.Component {
     return (
       <Fragment>
         <div className="container text-light">
-          <h1 className="text-light">Author Details</h1>
           <div className="d-flex justify-content-center align-items-center">
             <div className="avatar-1">
               <Image
@@ -52,7 +59,11 @@ class AuthorDetail extends React.Component {
           </div>
           <div className="row d-flex flex-wrap">
             {this.state.data.videos.map((array) => (
-              <PlaylistCard data={array} key={array.id_video} />
+              <PlaylistCard
+                url={this.state.data.author.slug_channel_name}
+                data={array}
+                key={array.id_video}
+              />
             ))}
           </div>
         </div>

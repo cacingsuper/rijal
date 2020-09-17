@@ -9,6 +9,7 @@ import Home from "./Home";
 import Trending from "./Trending";
 import Author from "./Author";
 import AuthorDetail from "./AuthorDetail";
+import Playlist from "./Video/Playlist";
 //
 
 class Menu extends React.Component {
@@ -58,7 +59,8 @@ class Menu extends React.Component {
               <Route path="/author" exact>
                 <Author />
               </Route>
-              <Route path="/author/:id" component={AuthorDetail}></Route>
+              <Route path="/author/:slug" exact component={AuthorDetail} />
+              <Route path="/author/:slug/:id" component={Playlist} />
             </Switch>
           </div>
         </Router>

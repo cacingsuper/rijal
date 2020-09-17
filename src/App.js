@@ -14,7 +14,7 @@ import Menu from "./Layout/Menu";
 function App() {
   return (
     <div>
-      <Alert />
+      {/* <Alert /> */}
       <Menu />
       <Footer />
     </div>
